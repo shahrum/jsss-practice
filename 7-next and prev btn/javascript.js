@@ -11,8 +11,11 @@ window.onload = function(){
 		currentslide = n;
 	}
 
-	nextslide = function(){
+	nextSlide = function(){
 		go2slide(currentslide + 1);
+	}
+	prvSlide = function(){
+		go2slide(currentslide-1);
 	}
 
 	var autoPlayIv = false;
@@ -25,6 +28,9 @@ window.onload = function(){
 			clearInterval(autoPlayIv);
 			autoPlayIv = false;
 		}
+
+	slideshow.getElementsByClassName('next').item(0).onclick = nextSlide();
+	slideshow.getElementsByClassName('next').item(0).onclick = prvSlide();
 
 	var list = document.getElementsByClassName('btns').item(0).getElementsByTagName('li');
 	for (var i = 0; i < list.length; i++) {
