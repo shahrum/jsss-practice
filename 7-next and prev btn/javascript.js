@@ -5,6 +5,7 @@ window.onload = function(){
 	var currentslide = 0;
 	go2slide = function(n){
 		if(n>list.length-1) n=0;
+		if(n<0) n=list.length-1;
 		train.style.left=(-450*n)+"px";
 		list.item(currentslide).className="";
 		list.item(n).className = "active";
