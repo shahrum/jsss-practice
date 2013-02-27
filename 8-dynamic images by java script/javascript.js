@@ -22,7 +22,7 @@ window.onload = function(){
 	var autoPlayIv = false;
 	autoPlayStart = slideshow.onmouseout = function(){
 		if(autoPlayIv) return;
-		autoPlayIv = setInterval(nextslide,2000);
+		autoPlayIv = setInterval(nextSlide,2000);
 	}
 
 	autoPlayStop = slideshow.onmouseover =function(){
