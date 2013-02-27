@@ -15,8 +15,7 @@ window.onload = function(){
 		go2slide(currentslide + 1);
 	}
 
-	autoPlayStop = function(){
-		slideshow.onmouseover = function(){
+	autoPlayStop = slideshow.onmouseover =function(){
 			clearInterval(timer);
 		}
 	}
