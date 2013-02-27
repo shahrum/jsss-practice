@@ -29,8 +29,8 @@ window.onload = function(){
 			autoPlayIv = false;
 		}
 
-	slideshow.getElementsByClassName('next').item(0).onclick = nextSlide();
-	slideshow.getElementsByClassName('next').item(0).onclick = prvSlide();
+	slideshow.getElementsByClassName('next').item(0).onclick = nextSlide;
+	slideshow.getElementsByClassName('previous').item(0).onclick = prvSlide;
 
 	var list = document.getElementsByClassName('btns').item(0).getElementsByTagName('li');
 	for (var i = 0; i < list.length; i++) {
