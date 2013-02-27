@@ -78,3 +78,16 @@ div.slideshow div.previous{
 	background-repeat  : no-repeat;
 }
 
+div.slideshow:hover div.next,
+div.slideshow:hover div.previous{
+	opacity : 1;
+}
+
+div.slideshow div.previous{
+	background-position: 0 0px;
+	left: 10px;
+}
+div.slideshow div.next{
+	background-position: -30px 0px;
+	right: 10px;
+}
